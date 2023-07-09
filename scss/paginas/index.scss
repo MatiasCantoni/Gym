@@ -1,0 +1,81 @@
+main{
+    background-color:#191a1f;
+    height: 2000px;
+    .box-1{
+        background-image: url(../imagenes/box1-definitiva.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        height: 500px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+        h1{
+            font-family:$font-family_1;
+            color: rgb(255, 77, 77);
+            text-align: center;
+            font-size: 60px;
+            
+            span:first-child{
+                color: white;
+                font-family: $font-family_2;
+                font-size: 18px;
+            }
+            span:last-child{
+                font-family: $font-family_1;
+                color: #696969;
+            }
+        }
+        p{
+            color: white;
+            font-family: $font-family_2;
+            width: 530px;
+            text-align: center;
+            font-size: 11px;
+            
+        }
+    }
+    .actividades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2{
+            text-align: center;
+            color: rgb(255, 77, 77);
+            font-family: $font-family_3;
+            font-size: 20px;
+            margin: 20px 0;
+            border-bottom-style: solid;
+        }
+    }
+    .box-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card-img-top{
+            height: 382px;
+        }
+        .card{
+            background-image: url(../imagenes/bici-modified.jpg);
+            height: 500px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border: none;
+        }
+        .btn{
+            background-color: rgb(255, 77, 77);
+            border-color: #191a1f;
+            &:hover{
+                width: 90px;
+                height: 38px;
+                
+            }
+        }
+        .card-body{
+            background-color: transparent;
+        }
+    }
+}

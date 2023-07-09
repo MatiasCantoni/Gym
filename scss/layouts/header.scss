@@ -1,0 +1,35 @@
+header{
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    p{
+        font-family:$font-family_1;
+        font-size: 24px;
+        color: #F46B6B;
+        margin: 0px 0px 0 40px;
+    }
+    span{
+        color: #696969;
+    }
+    div:last-child{
+        margin-right: 40px;
+        display: flex;
+        a{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.961);
+            font-family: $font-family_2;
+            font-size: small;
+            margin: 0 10px;
+            border-style: none solid none none;
+            border-width: 1px;
+            width: 70px; 
+        }
+        a:last-child{
+            border-style: none;
+        }
+    }
+}

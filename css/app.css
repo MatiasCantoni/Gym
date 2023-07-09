@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
+header {
+  background-color: black;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+}
+header p {
+  font-family: "anton";
+  font-size: 24px;
+  color: #F46B6B;
+  margin: 0px 0px 0 40px;
+}
+header span {
+  color: #696969;
+}
+header div:last-child {
+  margin-right: 40px;
+  display: flex;
+}
+header div:last-child a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.961);
+  font-family: "manrope";
+  font-size: small;
+  margin: 0 10px;
+  border-style: none solid none none;
+  border-width: 1px;
+  width: 70px;
+}
+header div:last-child a:last-child {
+  border-style: none;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #191a1f;
+  height: 2000px;
+}
+main .box-1 {
+  background-image: url(../imagenes/box1-definitiva.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+}
+main .box-1 h1 {
+  font-family: "anton";
+  color: rgb(255, 77, 77);
+  text-align: center;
+  font-size: 60px;
+}
+main .box-1 h1 span:first-child {
+  color: white;
+  font-family: "manrope";
+  font-size: 18px;
+}
+main .box-1 h1 span:last-child {
+  font-family: "anton";
+  color: #696969;
+}
+main .box-1 p {
+  color: white;
+  font-family: "manrope";
+  width: 530px;
+  text-align: center;
+  font-size: 11px;
+}
+main .actividades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .actividades h2 {
+  text-align: center;
+  color: rgb(255, 77, 77);
+  font-family: "belanosima";
+  font-size: 20px;
+  margin: 20px 0;
+  border-bottom-style: solid;
+}
+main .box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .box-2 .card-img-top {
+  height: 382px;
+}
+main .box-2 .card {
+  background-image: url(../imagenes/bici-modified.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+}
+main .box-2 .btn {
+  background-color: rgb(255, 77, 77);
+  border-color: #191a1f;
+}
+main .box-2 .btn:hover {
+  width: 90px;
+  height: 38px;
+}
+main .box-2 .card-body {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=app.css.map */
