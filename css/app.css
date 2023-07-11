@@ -30,12 +30,19 @@ header div:last-child a {
   font-family: "manrope";
   font-size: small;
   margin: 0 10px;
-  border-style: none solid none none;
+  cursor: pointer;
+}
+header div:last-child a:hover {
+  border-bottom-style: solid;
+  border-color: #F46B6B;
   border-width: 1px;
-  width: 70px;
 }
 header div:last-child a:last-child {
   border-style: none;
+}
+header div:last-child a:last-child:hover {
+  border-bottom-style: solid;
+  border-color: #F46B6B;
 }
 
 main {
@@ -103,13 +110,13 @@ main .box-2 {
   position: relative;
 }
 main .box-2 .tarjeta .tarj-1 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 main .box-2 .tarjeta .tarj-1 .tarjeta-1 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -128,17 +135,17 @@ main .box-2 .tarjeta .tarj-1 .tarjeta-1 .texto-tarjeta-1 {
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 300px;
+  width: auto;
   height: 400px;
   color: rgb(255, 77, 77);
   font-family: "raleway";
   font-weight: 200;
 }
 main .box-2 .tarjeta .tarj-1 .boton-tarjeta {
-  top: 0;
+  top: 50%;
   color: white;
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   text-align: center;
   position: absolute;
   display: flex;
@@ -149,27 +156,30 @@ main .box-2 .tarjeta .tarj-1 .boton-tarjeta {
   opacity: 0.7;
   font-size: larger;
   visibility: hidden;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  margin-left: 8%;
 }
 main .box-2 .tarjeta .tarj-1 .boton-tarjeta .texto-1 {
   opacity: 1;
   background-color: transparent;
-  border-style: none none solid none;
+  border-style: none;
 }
 main .box-2 .tarjeta .tarj-1:hover .boton-tarjeta {
   visibility: visible;
 }
 main .box-2 .tarjeta .tarj-1:hover .tarjeta-1 {
   transform: scale(1.1);
+  filter: blur(2px);
 }
 main .box-2 .tarjeta .tarj-2 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 main .box-2 .tarjeta .tarj-2 .tarjeta-2 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -195,10 +205,10 @@ main .box-2 .tarjeta .tarj-2 .tarjeta-2 .texto-tarjeta-2 {
   font-weight: 200;
 }
 main .box-2 .tarjeta .tarj-2 .boton-tarjeta {
-  top: 0;
+  top: 50%;
   color: white;
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   text-align: center;
   position: absolute;
   display: flex;
@@ -209,27 +219,30 @@ main .box-2 .tarjeta .tarj-2 .boton-tarjeta {
   opacity: 0.7;
   font-size: larger;
   visibility: hidden;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  margin-left: 8%;
 }
 main .box-2 .tarjeta .tarj-2 .boton-tarjeta .texto-2 {
   opacity: 1;
   background-color: transparent;
-  border-style: none none solid none;
+  border-style: none;
 }
 main .box-2 .tarjeta .tarj-2:hover .boton-tarjeta {
   visibility: visible;
 }
 main .box-2 .tarjeta .tarj-2:hover .tarjeta-2 {
   transform: scale(1.1);
+  filter: blur(2px);
 }
 main .box-2 .tarjeta .tarj-3 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 main .box-2 .tarjeta .tarj-3 .tarjeta-3 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -255,10 +268,10 @@ main .box-2 .tarjeta .tarj-3 .tarjeta-3 .texto-tarjeta-3 {
   font-weight: 200;
 }
 main .box-2 .tarjeta .tarj-3 .boton-tarjeta {
-  top: 0;
+  top: 50%;
   color: white;
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   text-align: center;
   position: absolute;
   display: flex;
@@ -269,27 +282,30 @@ main .box-2 .tarjeta .tarj-3 .boton-tarjeta {
   opacity: 0.7;
   font-size: larger;
   visibility: hidden;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  margin-left: 7%;
 }
 main .box-2 .tarjeta .tarj-3 .boton-tarjeta .texto-3 {
   opacity: 1;
   background-color: transparent;
-  border-style: none none solid none;
+  border-style: none;
 }
 main .box-2 .tarjeta .tarj-3:hover .boton-tarjeta {
   visibility: visible;
 }
 main .box-2 .tarjeta .tarj-3:hover .tarjeta-3 {
   transform: scale(1.1);
+  filter: blur(2px);
 }
 main .box-2 .tarjeta .tarj-4 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 main .box-2 .tarjeta .tarj-4 .tarjeta-4 {
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -315,10 +331,10 @@ main .box-2 .tarjeta .tarj-4 .tarjeta-4 .texto-tarjeta-4 {
   font-weight: 200;
 }
 main .box-2 .tarjeta .tarj-4 .boton-tarjeta {
-  top: 0;
+  top: 50%;
   color: white;
-  width: 300px;
-  height: 400px;
+  width: auto;
+  height: auto;
   text-align: center;
   position: absolute;
   display: flex;
@@ -329,18 +345,21 @@ main .box-2 .tarjeta .tarj-4 .boton-tarjeta {
   opacity: 0.7;
   font-size: larger;
   visibility: hidden;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+  margin-left: 8%;
+  border-radius: 5px;
 }
 main .box-2 .tarjeta .tarj-4 .boton-tarjeta .texto-4 {
   opacity: 1;
   background-color: transparent;
-  border-style: none none solid none;
+  border-style: none;
 }
 main .box-2 .tarjeta .tarj-4:hover .boton-tarjeta {
   visibility: visible;
 }
 main .box-2 .tarjeta .tarj-4:hover .tarjeta-4 {
   transform: scale(1.1);
+  filter: blur(2px);
 }
 
 /*# sourceMappingURL=app.css.map */
