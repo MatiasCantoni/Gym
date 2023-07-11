@@ -58,49 +58,246 @@ main{
         flex-direction: column;
         position: relative;
         .tarjeta{
-            width: 300px;
-            height: 400px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .img-tarjeta{
+            .tarj-1{
                 width: 300px;
                 height: 400px;
-                object-fit: cover;
+                overflow: hidden;
+                .tarjeta-1{
+                    width: 300px;
+                    height: 400px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s ease;
+                    .img-tarjeta-1{
+                        width: 300px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                    .texto-tarjeta-1{
+                        position: absolute;
+                        text-align:center;
+                        display: flex;
+                        justify-content: center;
+                        align-items:end;
+                        width: 300px;
+                        height: 400px;
+                        color:rgb(255, 77, 77) ;
+                        font-family: $font-family_4;
+                        font-weight: 200;
+                    }
+                }
+                .boton-tarjeta{
+                    top:0;
+                    color: white;
+                    width: 300px;
+                    height: 400px;
+                    text-align: center;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: rgb(255, 77, 77);
+                    opacity: .7;
+                    font-size: larger;
+                    visibility: hidden;
+                    transition: .5s ease;
+                    .texto-1{
+                        opacity: 1;
+                        background-color: transparent;
+                        border-style:none none solid none;
+                    }
+                }
             }
-            .texto-tarjeta{
-                position: absolute;
-                text-align:center;
-                display: flex;
-                justify-content: center;
-                align-items:end;
+            .tarj-1:hover .boton-tarjeta{
+                visibility: visible;
+            }
+            .tarj-1:hover .tarjeta-1{
+                transform: scale(1.1);
+            }
+            .tarj-2{
                 width: 300px;
                 height: 400px;
-                color:rgb(255, 77, 77) ;
-                font-family: $font-family_4;
-                font-weight: 200;
+                overflow: hidden;
+                .tarjeta-2{
+                    width: 300px;
+                    height: 400px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s ease;
+                    .img-tarjeta-2{
+                        width: 300px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                    .texto-tarjeta-2{
+                        position: absolute;
+                        text-align:center;
+                        display: flex;
+                        justify-content: center;
+                        align-items:end;
+                        width: 300px;
+                        height: 400px;
+                        color:rgb(255, 77, 77) ;
+                        font-family: $font-family_4;
+                        font-weight: 200;
+                    }
+                }
+                .boton-tarjeta{
+                    top:0;
+                    color: white;
+                    width: 300px;
+                    height: 400px;
+                    text-align: center;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: rgb(255, 77, 77);
+                    opacity: .7;
+                    font-size: larger;
+                    visibility: hidden;
+                    transition: .5s ease;
+                    .texto-2{
+                        opacity: 1;
+                        background-color: transparent;
+                        border-style:none none solid none;
+                    }
+                }
             }
-        }
-        .boton-tarjeta{
-            top: 0;
-            left: 0;
-            color: white;
-            width: 350px;
-            height: 400px;
-            text-align: center;
-            position: absolute;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: rgb(255, 77, 77);
-            opacity: .8;
-            visibility:hidden;
-        }
-        .boton-tarjeta:hover{
-            visibility: visible;
+            .tarj-2:hover .boton-tarjeta{
+                visibility: visible;
+            }
+            .tarj-2:hover .tarjeta-2{
+                transform: scale(1.1);
+            }
+            .tarj-3{
+                width: 300px;
+                height: 400px;
+                overflow: hidden;
+                .tarjeta-3{
+                    width: 300px;
+                    height: 400px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s ease;
+                    .img-tarjeta-3{
+                        width: 300px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                    .texto-tarjeta-3{
+                        position: absolute;
+                        text-align:center;
+                        display: flex;
+                        justify-content: center;
+                        align-items:end;
+                        width: 300px;
+                        height: 400px;
+                        color:rgb(255, 77, 77) ;
+                        font-family: $font-family_4;
+                        font-weight: 200;
+                    }
+                }
+                .boton-tarjeta{
+                    top:0;
+                    color: white;
+                    width: 300px;
+                    height: 400px;
+                    text-align: center;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: rgb(255, 77, 77);
+                    opacity: .7;
+                    font-size: larger;
+                    visibility: hidden;
+                    transition: .5s ease;
+                    .texto-3{
+                        opacity: 1;
+                        background-color: transparent;
+                        border-style:none none solid none;
+                    }
+                }
+            }
+            .tarj-3:hover .boton-tarjeta{
+                visibility: visible;
+            }
+            .tarj-3:hover .tarjeta-3{
+                transform: scale(1.1);
+            }
+            .tarj-4{
+                width: 300px;
+                height: 400px;
+                overflow: hidden;
+                .tarjeta-4{
+                    width: 300px;
+                    height: 400px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s ease;
+                    .img-tarjeta-4{
+                        width: 300px;
+                        height: 400px;
+                        object-fit: cover;
+                    }
+                    .texto-tarjeta-4{
+                        position: absolute;
+                        text-align:center;
+                        display: flex;
+                        justify-content: center;
+                        align-items:end;
+                        width: 300px;
+                        height: 400px;
+                        color:rgb(255, 77, 77) ;
+                        font-family: $font-family_4;
+                        font-weight: 200;
+                    }
+                }
+                .boton-tarjeta{
+                    top: 0;
+                    color: white;
+                    width: 300px;
+                    height: 400px;
+                    text-align: center;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: rgb(255, 77, 77);
+                    opacity: .7;
+                    font-size: larger;
+                    visibility: hidden;
+                    transition: .5s ease;
+                    .texto-4{
+                        opacity: 1;
+                        background-color: transparent;
+                        border-style:none none solid none;
+                    }
+                }
+            }
+            .tarj-4:hover .boton-tarjeta{
+                visibility: visible;
+            }
+            .tarj-4:hover .tarjeta-4{
+                transform: scale(1.1);
+            }
         }
     }
 }
