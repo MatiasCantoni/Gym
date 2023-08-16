@@ -1,0 +1,11 @@
+@mixin mediaquery-mobilexl(){
+    @media (max-width:660px){
+        @content;
+    }
+}
+
+@mixin mediaquery-mobileM(){
+    @media (max-width:575px){
+        @content;
+    }
+}
