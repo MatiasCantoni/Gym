@@ -1,6 +1,7 @@
 main{
     background-color:#191a1f;
-    height: 3000px;
+    height: auto;
+    margin-bottom: 1.5rem;
     .box-1{
         background-image: url(../imagenes/box1-definitiva.jpg);
         background-size:cover;
@@ -351,9 +352,6 @@ main{
                 }
                 h3{
                     color:white ;
-                }
-                p{
-                    
                 }
                 p:nth-child(2){
                     color: rgb(255, 77, 77);

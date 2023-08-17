@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Belanosima&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap");
 header {
-  background-color: black;
+  background-color: rgb(22, 22, 22);
   height: auto;
   display: flex;
   flex-direction: row;
@@ -45,14 +45,61 @@ header div:last-child a:last-child:hover {
   border-color: #F46B6B;
 }
 
-main {
+body {
   margin: 0;
   padding: 0;
+  background-color: #191a1f;
+}
+
+footer {
+  background-color: rgb(22, 22, 22);
+  height: auto;
+}
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "raleway";
+  align-items: center;
+  margin-top: 10px;
+}
+footer .footer .paginas-footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+footer .footer .paginas-footer .paginas_extra {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+footer .footer .formulario {
+  margin-bottom: 10px;
+}
+footer .footer .formulario .titulo_formulario {
+  color: white;
+  font-size: medium;
+  text-align: center;
+}
+footer .footer .formulario .relleno {
+  background-color: rgba(123, 123, 123, 0.581);
+  color: white;
+}
+footer .footer .formulario .boton_formulario {
+  background-color: #ff4d4d;
+}
+footer .footer .redes-footer {
+  width: 30px;
+  height: 28px;
+  margin: 5px;
+  margin-right: 1rem;
 }
 
 main {
   background-color: #191a1f;
-  height: 3000px;
+  height: auto;
+  margin-bottom: 1.5rem;
 }
 main .box-1 {
   background-image: url(../imagenes/box1-definitiva.jpg);
