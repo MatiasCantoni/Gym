@@ -17,28 +17,37 @@ footer{
                 text-decoration: none;
                 font-size:12px;
                 margin-bottom: 5px;
+                &:hover{
+                    border-bottom-style: solid;
+                    border-color: #F46B6B;
+                    border-width: 1px;
+                    transition: .5s ease;
+                }
+                @include mediaquery-mobileS(){
+                    font-size: 9px;
+                }
             }
         }
-        .formulario{
-            margin-bottom: 10px;
-            .titulo_formulario{
-                color: white;
-                font-size: medium;
-                text-align: center;
+        div{
+            p{
+                font-family:$font-family_1;
+                font-size: 24px;
+                color: #F46B6B;
             }
-            .relleno{
-                background-color: rgba(123, 123, 123, 0.581);
-                color: white;
-            }
-            .boton_formulario{
-                background-color: #ff4d4d;
+            span{
+                color: #696969;
             }
         }
         .redes-footer{
             width: 30px;
             height: 28px;
-            margin: 5px;
             margin-right: 1rem;
+            margin-bottom:10px ;
+            @include mediaquery-mobileS(){
+                width: 20px;
+                height: auto;
+                margin-right: 10px;
+            }
         }
     }
 }

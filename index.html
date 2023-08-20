@@ -3,19 +3,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/app.css">
     </head>
     <body>
         <header>
-            <div>
-                <p><span>BLACK</span>GYM</p>
+            <div id="logo">
+                <a class="logo" href="./index.html"><p><span>BLACK</span>GYM</p></a>
             </div>
-            <div>
+            <div id="Links">
                 <a href="./paginas/ubicacion.html">Ubicacion</a>
                 <a href="./paginas/horarios.html">Horarios</a>
-                <a href="./paginas/actividades.html">Actividades</a>
+                <a class="act" href="./paginas/actividades.html">Actividades</a>
             </div>
+            <a href="javascript:void(0);" class="icon nav" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </header>
         <main>
             <section class="container-fluid">
@@ -105,11 +109,8 @@
                             <a class="paginas_extra" href="./paginas/sobrenosotros.html">Sobre Nosotros</a>
                             <a class="paginas_extra" href="./paginas/faq.html">Preguntas Frecuentes</a>
                         </div>
-                        <div class="formulario">
-                            <h4 class="titulo_formulario">ENTERATE DE LAS NOVEDADES</h4>
-                            <input class="relleno" type="text" placeholder="Nombre">
-                            <input class="relleno" type="email" placeholder="E-Mail">
-                            <input class="boton_formulario" type="submit" value="Enviar">
+                        <div>
+                            <p><span>BLACK</span>GYM</p>
                         </div>
                         <div>
                             <a href="https://www.instagram.com/" target="_blank"><img class="redes-footer" src="./imagenes/instagram.png" alt="logo instagram"></a>
@@ -120,5 +121,15 @@
             </section>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("Links");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script>
     </body>
 </html>

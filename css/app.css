@@ -10,21 +10,31 @@ header {
   justify-content: space-between;
   text-decoration: none;
   align-items: center;
+  position: relative;
 }
-header p {
+header #logo .logo {
+  text-decoration: none;
+  cursor: pointer;
+}
+header #logo p {
   font-family: "anton";
   font-size: 24px;
   color: #F46B6B;
   margin: 0px 0px 0 40px;
 }
-header span {
+header #logo span {
   color: #696969;
 }
-header div:last-child {
+header #links {
   margin-right: 40px;
   display: flex;
 }
-header div:last-child a {
+@media (max-width: 575px) {
+  header #links {
+    display: none;
+  }
+}
+header #links a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.961);
   font-family: "manrope";
@@ -32,17 +42,52 @@ header div:last-child a {
   margin: 0 10px;
   cursor: pointer;
 }
-header div:last-child a:hover {
+@media (max-width: 575px) {
+  header #links a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    display: block;
+    margin: 10px 0 20px 0;
+  }
+}
+header #links a:hover {
   border-bottom-style: solid;
   border-color: #F46B6B;
   border-width: 1px;
+  transition: 0.5s ease;
 }
-header div:last-child a:last-child {
+header #links .act {
   border-style: none;
 }
-header div:last-child a:last-child:hover {
+@media (max-width: 575px) {
+  header #links .act {
+    top: 30px;
+    right: 15px;
+  }
+}
+header #links .act:hover {
   border-bottom-style: solid;
   border-color: #F46B6B;
+}
+header .nav {
+  display: none;
+  background-color: #F46B6B;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+}
+@media (max-width: 575px) {
+  header .nav {
+    background: rgb(22, 22, 22);
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 8px;
+    color: #F46B6B;
+    font-size: 25px;
+  }
 }
 
 body {
@@ -74,26 +119,37 @@ footer .footer .paginas-footer .paginas_extra {
   font-size: 12px;
   margin-bottom: 5px;
 }
-footer .footer .formulario {
-  margin-bottom: 10px;
+footer .footer .paginas-footer .paginas_extra:hover {
+  border-bottom-style: solid;
+  border-color: #F46B6B;
+  border-width: 1px;
+  transition: 0.5s ease;
 }
-footer .footer .formulario .titulo_formulario {
-  color: white;
-  font-size: medium;
-  text-align: center;
+@media (max-width: 420px) {
+  footer .footer .paginas-footer .paginas_extra {
+    font-size: 9px;
+  }
 }
-footer .footer .formulario .relleno {
-  background-color: rgba(123, 123, 123, 0.581);
-  color: white;
+footer .footer div p {
+  font-family: "anton";
+  font-size: 24px;
+  color: #F46B6B;
 }
-footer .footer .formulario .boton_formulario {
-  background-color: #ff4d4d;
+footer .footer div span {
+  color: #696969;
 }
 footer .footer .redes-footer {
   width: 30px;
   height: 28px;
-  margin: 5px;
   margin-right: 1rem;
+  margin-bottom: 10px;
+}
+@media (max-width: 420px) {
+  footer .footer .redes-footer {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+  }
 }
 
 main {

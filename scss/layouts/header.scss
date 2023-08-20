@@ -6,18 +6,28 @@ header{
     justify-content: space-between;
     text-decoration: none;
     align-items: center;
-    p{
-        font-family:$font-family_1;
-        font-size: 24px;
-        color: #F46B6B;
-        margin: 0px 0px 0 40px;
+    position: relative;
+    #logo{
+        .logo{
+            text-decoration: none;
+            cursor: pointer;
+        }
+        p{
+            font-family:$font-family_1;
+            font-size: 24px;
+            color: #F46B6B;
+            margin: 0px 0px 0 40px;
+        }
+        span{
+            color: #696969;
+        }
     }
-    span{
-        color: #696969;
-    }
-    div:last-child{
+    #links{
         margin-right: 40px;
         display: flex;
+        @include mediaquery-mobileM(){
+            display:none;
+        }
         a{
             text-decoration: none;
             color: rgba(255, 255, 255, 0.961);
@@ -25,18 +35,48 @@ header{
             font-size: small;
             margin: 0 10px;
             cursor: pointer;
+            @include mediaquery-mobileM(){
+                color: white;
+                text-decoration: none;
+                font-size: small;
+                display: block;
+                margin: 10px 0 20px 0;
+            }
             &:hover{
                 border-bottom-style: solid;
                 border-color: #F46B6B;
                 border-width: 1px;
+                transition: .5s ease;
             }
         }
-        a:last-child{
+        .act{
             border-style: none;
+            @include mediaquery-mobileM(){
+                top: 30px;
+                right: 15px;
+            }
             &:hover{
                 border-bottom-style: solid;
                 border-color: #F46B6B;
+                
             }
+        }
+    }
+    .nav{
+        display: none;
+        background-color: #F46B6B;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-decoration: none;
+        @include mediaquery-mobileM(){
+            background: rgb(22, 22, 22);
+            display: block;
+            position: absolute;
+            right: 18px;
+            top: 8px;
+            color: #F46B6B;
+            font-size: 25px;
         }
     }
 }
