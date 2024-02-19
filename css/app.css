@@ -534,4 +534,66 @@ main .box-3 .entrenadores .foto-entrenador .img-entrenador {
   }
 }
 
+main {
+  background-color: #191a1f;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+main .act-box-1 {
+  background-image: url(../imagenes/gym\ vacio.jpg);
+  background-size: cover;
+  background-position: inherit;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  pointer-events: none;
+}
+main .act-box-1 h1 {
+  font-family: "anton";
+}
+main .act-box-1 h1 span:first-child {
+  color: 191a1f;
+  font-family: "manrope";
+  font-size: 30px;
+  font-weight: bold;
+}
+main .act-box-1 h1 span:last-child {
+  color: rgb(255, 77, 77);
+  font-family: "manrope";
+  font-size: 30px;
+  font-weight: bold;
+}
+main .act-box-2 {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 0 0 0;
+}
+main .act-box-2 .musculacion img {
+  height: auto;
+  width: 400px;
+}
+main .act-box-2 .musculacion .col-9 {
+  width: 800px;
+  margin: 0rem 0 0 5.3rem;
+  background-color: #bba6a6;
+  font-family: "raleway";
+}
+main .act-box-2 .musculacion .col-9 h3 {
+  text-decoration: underline;
+  font-family: "belanosima";
+  margin: 1rem;
+}
+main .act-box-2 .musculacion .col-9 p {
+  margin-left: 0.5rem;
+}
+main .act-box-2 .musculacion .col-9 p:last-child {
+  font-weight: bold;
+  margin-top: 2.1rem;
+}
+
 /*# sourceMappingURL=app.css.map */

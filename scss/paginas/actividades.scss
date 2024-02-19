@@ -1,0 +1,65 @@
+main{
+    background-color:#191a1f;
+    height: auto;
+    margin-bottom: 1.5rem;
+    .act-box-1{
+        background-image:url(../imagenes/gym\ vacio.jpg);
+        background-size: cover;
+        background-position:inherit;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        pointer-events: none;
+        h1{
+            font-family: $font-family_1;
+            span:first-child{
+                color: 191a1f;
+                font-family: $font-family_2;
+                font-size:30px;
+                font-weight: bold;
+            }
+            span:last-child{
+                color:rgb(255, 77, 77) ;
+                font-family: $font-family_2;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            
+        }
+    }
+    .act-box-2{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1rem 0 0 0;
+        .musculacion{
+            img{
+                height: auto;
+                width: 400px;
+
+            }
+            .col-9{
+                width: 800px;
+                margin:0rem 0 0 5.3rem;
+                background-color: #bba6a6;
+                font-family: $font-family_4;
+                h3{
+                    text-decoration:underline;
+                    font-family: $font-family_3;
+                    margin:1rem;
+                }
+                p{
+                    margin-left: 0.5rem;
+                    &:last-child{
+                        font-weight: bold;
+                        margin-top: 2.1rem;
+                    }
+                }
+            }
+        }
+    }
+}
