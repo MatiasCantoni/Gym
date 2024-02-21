@@ -32,20 +32,27 @@ main{
     }
     .act-box-2{
         height: auto;
+        width: auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
         margin: 1rem 0 0 0;
+        margin-inline:3rem ;
         .musculacion{
-            img{
-                height: auto;
-                width: 400px;
-
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #bba6a6;
+            padding: 0;
+            .foto-musculacion{
+                width: auto;
+                img{
+                    height: auto;
+                    width: 400px;
+                }
             }
-            .col-9{
-                width: 800px;
-                margin:0rem 0 0 5.3rem;
-                background-color: #bba6a6;
+            .info-musculacion{
                 font-family: $font-family_4;
                 h3{
                     text-decoration:underline;
@@ -54,10 +61,47 @@ main{
                 }
                 p{
                     margin-left: 0.5rem;
+                    margin-right: 2rem;
                     &:last-child{
                         font-weight: bold;
                         margin-top: 2.1rem;
                     }
+                }
+            }
+        }
+    }
+    .act-box-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+        margin-inline: 3rem;
+        .bici{
+            background-color: #bba6a6;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0;
+            .info-bici{
+                font-family: $font-family_4;
+                h3{
+                    text-decoration:underline;
+                    font-family: $font-family_3;
+                    margin:1rem;
+                }
+                p{
+                    margin-left: 0.5rem;
+                    margin-right: 2rem;
+                    &:last-child{
+                        font-weight: bold;
+                        margin-top: 2.1rem;
+                    }
+                }
+            }
+            .img-bici{
+                img{
+                    width: 400px;
+                    height: auto;
                 }
             }
         }

@@ -568,32 +568,77 @@ main .act-box-1 h1 span:last-child {
 }
 main .act-box-2 {
   height: auto;
+  width: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin: 1rem 0 0 0;
+  margin-inline: 3rem;
 }
-main .act-box-2 .musculacion img {
+main .act-box-2 .musculacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #bba6a6;
+  padding: 0;
+}
+main .act-box-2 .musculacion .foto-musculacion {
+  width: auto;
+}
+main .act-box-2 .musculacion .foto-musculacion img {
   height: auto;
   width: 400px;
 }
-main .act-box-2 .musculacion .col-9 {
-  width: 800px;
-  margin: 0rem 0 0 5.3rem;
-  background-color: #bba6a6;
+main .act-box-2 .musculacion .info-musculacion {
   font-family: "raleway";
 }
-main .act-box-2 .musculacion .col-9 h3 {
+main .act-box-2 .musculacion .info-musculacion h3 {
   text-decoration: underline;
   font-family: "belanosima";
   margin: 1rem;
 }
-main .act-box-2 .musculacion .col-9 p {
+main .act-box-2 .musculacion .info-musculacion p {
   margin-left: 0.5rem;
+  margin-right: 2rem;
 }
-main .act-box-2 .musculacion .col-9 p:last-child {
+main .act-box-2 .musculacion .info-musculacion p:last-child {
   font-weight: bold;
   margin-top: 2.1rem;
+}
+main .act-box-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-inline: 3rem;
+}
+main .act-box-3 .bici {
+  background-color: #bba6a6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+main .act-box-3 .bici .info-bici {
+  font-family: "raleway";
+}
+main .act-box-3 .bici .info-bici h3 {
+  text-decoration: underline;
+  font-family: "belanosima";
+  margin: 1rem;
+}
+main .act-box-3 .bici .info-bici p {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+}
+main .act-box-3 .bici .info-bici p:last-child {
+  font-weight: bold;
+  margin-top: 2.1rem;
+}
+main .act-box-3 .bici .img-bici img {
+  width: 400px;
+  height: auto;
 }
 
 /*# sourceMappingURL=app.css.map */
